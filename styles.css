@@ -1,0 +1,121 @@
+/* Reset CSS */
+* {
+    margin: 0%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+header {
+    background-color: blueviolet;
+    color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+    margin-right: 0px;
+}
+ header h1 {
+    font-size: 50px;
+    font-family: perpetua ;
+ }
+
+.logo {
+    width: 200px; 
+    height: auto; 
+    margin-right: 10px;
+    vertical-align: left;
+}
+
+div h1 {
+    font-family: garamond ;
+    margin-top: 10px;
+    font-size: 40px;
+}
+main {
+    padding: 5px;
+}
+
+article {
+    margin-bottom: 10px; 
+    padding: 10px; 
+    background-color:white ; 
+    border-radius: 4px; 
+}
+
+article h2 {
+    font-size: 30px; 
+    color:#000;
+    margin-bottom: 0%;
+    font-family: tempas sans itc ; 
+}
+
+article div nav {
+    background-color: white;
+    list-style-type: disc;
+}
+
+article div nav ul li {
+    list-style-type: none;
+    display: flex;
+    padding: 5px;
+}
+
+article div nav ul {
+    list-style-type: none; 
+    counter-reset: my-counter;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+article div nav ul li::before {
+    content: counter(my-counter) ". "; 
+    counter-increment: my-counter; 
+}
+
+article nav ul {
+    padding: 15px;
+    padding-left: 3%;
+}
+
+article nav p {
+    font-size: 20px;
+}
+
+.tebal {
+    font-weight: bold;
+}
+
+hr {
+    background-color: black;
+    padding: 1px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: rgb(29, 29, 190);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: block;
+        text-align: left;
+    }
+    
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    nav ul li:last-child {
+        margin-bottom: 0;
+    }
+}
